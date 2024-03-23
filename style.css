@@ -1,0 +1,479 @@
+/* Add your custom CSS here */
+
+body {
+    background-color: #383737;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent background with opacity */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    color: #FFFFFF;
+    padding: 20px 0;
+  }
+  
+  header .navbar-toggler {
+    border-color: rgba(255, 215, 0, 0.8); /* Adjust border color */
+  }
+  
+  header .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%23FFD700' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  
+  header .navbar-nav .nav-link {
+    color: #FFFFFF;
+    font-size: 18px;
+  }
+  
+  header .navbar-nav .nav-link:hover {
+    color: rgba(255, 215, 0, 0.8); /* Adjust hover color */
+  }
+  
+  
+  section {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  section h1,
+  section h2 {
+    color: #000000;
+  }
+  
+  section p {
+    color: #666666;
+  }
+  
+  #home {
+    background-color: #222222;
+    padding: 100px 0;
+  }
+  
+  #home h1 {
+    color: #ffffff;
+    font-size: 36px;
+  }
+  
+  #home p {
+    color: #cccccc;
+    font-size: 20px;
+  }
+  
+  #home img {
+    max-width: 80%;
+  }
+  
+  #home .row {
+    margin-top: 30px;
+  }
+  
+  #home .col-md-4 {
+    text-align: center;
+  }
+
+  
+  #skills {
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust the opacity as needed */
+    border-radius: 10px;
+    padding: 50px 0;
+    backdrop-filter: blur(10px); /* Apply the frosted glass effect */
+    overflow: hidden; /* Ensure the blur effect doesn't overflow */
+}
+
+#skills .container {
+    padding-top: 50px;
+}
+
+#skills h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+#skills p {
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.skill-category {
+    margin-bottom: 50px;
+}
+
+.skill-category h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Names-Label {
+    color: white;
+    font-weight: bold;
+}
+
+.skill-box {
+    border: none; /* Remove the border */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust the opacity as needed */
+    backdrop-filter: blur(10px); /* Apply the frosted glass effect */
+    overflow: hidden; /* Ensure the blur effect doesn't overflow */
+}
+
+.skill-box ul li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.skill-box ul li img {
+    max-width: 100px;
+    max-height: 50px;
+}
+
+.skill-box ul li span {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+    color: white;
+}
+
+.timeline ul {
+  background: rgba(56, 55, 55, 0.7); /* Use rgba for transparency */
+  padding: 50px 0;
+  backdrop-filter: blur(10px); /* Apply blur effect to create glassmorphism */
+}
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: rgba(255, 255, 255, 0.2); /* Use rgba for transparency */
+}
+.timeline ul li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+  z-index: 1;
+}
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: rgba(73, 71, 71, 0.719); /* Use rgba for transparency */
+  backdrop-filter: blur(10px); /* Apply blur effect to create glassmorphism */
+}
+
+.timeline ul li div::before {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent rgba(160, 160, 160, 0.5) transparent transparent; /* Use rgba for transparency */
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent rgba(207, 203, 203, 0.5); /* Use rgba for transparency */
+}
+
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.small-img {
+  width: 100px; /* Adjust this value to the desired width */
+  height: auto; /* This ensures the aspect ratio is maintained */
+}
+
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+  transition: background 0.5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: #2b2727;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #ada8a9 transparent transparent;
+  }
+}
+
+
+/* EXTRA/CLIP PATH STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.timeline-clippy ul li::after {
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
+}
+
+.timeline-rhombus ul li::after {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.timeline-rhombus ul li div::before {
+  bottom: 12px;
+}
+
+.timeline-star ul li::after {
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+.timeline-heptagon ul li::after {
+  clip-path: polygon(
+    50% 0%,
+    90% 20%,
+    100% 60%,
+    75% 100%,
+    25% 100%,
+    0% 60%,
+    10% 20%
+  );
+}
+
+.timeline-infinite ul li::after {
+  animation: scaleAnimation 2s infinite;
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    transform: translateX(-50%) scale(1.25);
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
+}
+
+
+  .neumorphism {
+    background-color: #333333;
+    padding: 1px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #111111, -10px -10px 20px #444444;
+  }
+  
+  .neumorphism img {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto 20px;
+  }
+  
+  .neumorphism p {
+    color: #cccccc;
+    font-size: 16px;
+  }
+  
+  .qr-code {
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    max-width: 80%;
+    width: 80%;
+  }
+  
+  .qr-code:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Font Awesome Icon Colors */
+  .fa-github {
+    color: #333;
+  }
+  
+  .fa-facebook {
+    color: #3b5998;
+  }
+  
+  .fa-tiktok {
+    color: #000;
+  }
+  
+  /* Hover Effect */
+  .fa-github:hover,
+  .fa-facebook:hover,
+  .fa-tiktok:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Icon Container */
+  .text-center.text-md-start .fab {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  #contact {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+  }
+  
+  #contact h2 {
+    color: #333333;
+  }
+  
+  #contact p {
+    color: #666666;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    margin-bottom: 0;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 767px) {
+    header .navbar-brand {
+      font-size: 24px;
+    }
+  
+    header .navbar-nav .nav-link {
+      font-size: 16px;
+    }
+  
+    section {
+      padding: 30px 0;
+    }
+  
+    .text-center.text-md-start {
+      margin-top: 50px;
+    }
+
+    .qr-code{
+        margin-top: 4%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    header .navbar-brand {
+      font-size: 20px;
+    }
+  
+    header .navbar-nav .nav-link {
+      font-size: 14px;
+    }
+  
+    section {
+      padding: 20px 0;
+    }
+    .qr-code{
+        margin-top: 4%;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
